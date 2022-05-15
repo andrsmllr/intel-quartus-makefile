@@ -133,6 +133,10 @@ ${QUARTUS_ASM_REPORT}: ${QUARTUS_FIT_REPORT}
 
 ################################################################################
 
+.DEFAULT_GOAL := all
+.PHONY: all
+all: bit timing power
+
 .PHONY: help
 help:
 	$(info ${NULL}Usage: make <TARGET> [VARIANT=<VARIANT>] [...])
